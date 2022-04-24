@@ -265,8 +265,10 @@ where
 
 /// Internal structure to track the content and name of each file to be uploaded.
 pub struct FileContent {
-    pub(crate) name: String,
-    pub(crate) content: Vec<u8>,
+    /// full path to upload to.
+    pub name: String,
+    /// file contents.
+    pub content: Vec<u8>,
 }
 
 /// Request object to pin content as a file.
